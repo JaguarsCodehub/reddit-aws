@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-redditaws-dev-113506-authRole",
+      "UnauthRoleArn": "arn:aws:iam::805012131702:role/amplify-redditaws-dev-113506-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::805012131702:role/amplify-redditaws-dev-113506-authRole",
+      "Region": "ap-south-1",
+      "DeploymentBucketName": "amplify-redditaws-dev-113506-deployment",
+      "UnauthRoleName": "amplify-redditaws-dev-113506-unauthRole",
+      "StackName": "amplify-redditaws-dev-113506",
+      "StackId": "arn:aws:cloudformation:ap-south-1:805012131702:stack/amplify-redditaws-dev-113506/09dacdf0-a038-11ec-8f34-064d8164693e",
+      "AmplifyAppId": "dwqnupbosc705"
+    }
+  }
+}
