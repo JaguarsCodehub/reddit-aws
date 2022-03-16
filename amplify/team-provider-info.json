@@ -10,6 +10,12 @@
       "StackName": "amplify-redditaws-dev-113506",
       "StackId": "arn:aws:cloudformation:ap-south-1:805012131702:stack/amplify-redditaws-dev-113506/09dacdf0-a038-11ec-8f34-064d8164693e",
       "AmplifyAppId": "dwqnupbosc705"
+    },
+    "categories": {
+      "auth": {
+        "redditaws992a78fb": {},
+        "true": {}
+      }
     }
   }
 }

@@ -1,0 +1,51 @@
+input AMPLIFY {
+  globalAuthRule: AuthRule = { allow: public }
+}
+type Post
+  @model
+  @auth(
+    rules: [
+      # Owner can perform any action on their own Post
+      { allow: owner, operations: [create, read, update] }
+      # Other signed in users can read everyone's posts
+      { allow: private, operations: [read] }
+      # Non-signed-in users (guests) can read everyones posts as well.
+      { allow: public, operations: [read] }
+    ]
+  ) {
+  id: ID!
+  title: String!
+  contents: String!
+  image: String
+  votes: [Vote!]! @hasMany
+  comments: [Comment] @hasMany
+}
+
+type Comment
+  @model
+  @auth(
+    rules: [
+      { allow: owner, operations: [create, read, update] }
+      { allow: private, operations: [read] }
+      { allow: public, operations: [read] }
+    ]
+  ) {
+  id: ID!
+  post: Post @belongsTo
+  content: String!
+}
+
+type Vote
+  @model
+  @auth(
+    rules: [
+      { allow: owner, operations: [create, read, update, delete] }
+      { allow: private, operations: [read] }
+      { allow: public, operations: [read] }
+    ]
+  ) {
+  # owner
+  vote: String!
+  id: ID!
+  post: Post @belongsTo
+}

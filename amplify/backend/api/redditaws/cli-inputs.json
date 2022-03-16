@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "serviceConfiguration": {
+    "apiName": "redditaws",
+    "serviceName": "AppSync",
+    "gqlSchemaPath": "C:\\Users\\Jyotindra\\Desktop\\My Projects\\ReactJs\\reddit-aws\\amplify\\backend\\api\\redditaws\\schema.graphql",
+    "defaultAuthType": {
+      "mode": "API_KEY",
+      "expirationTime": 365,
+      "apiKeyExpirationDate": "2023-03-10T06:34:51.097Z",
+      "keyDescription": "Cool API key for reddit"
+    },
+    "additionalAuthTypes": [
+      {
+        "mode": "AMAZON_COGNITO_USER_POOLS",
+        "cognitoUserPoolId": "authredditaws992a78fb"
+      }
+    ]
+  }
+}
